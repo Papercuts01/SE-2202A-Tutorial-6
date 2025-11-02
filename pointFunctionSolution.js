@@ -18,7 +18,7 @@ function Point(x, y) {
     }
 
 
-    this.scaleTo = function(p2,t){
+    this.scaleTo = function(p2, s){
         let sx = this.x + (p2.x - this.x) * s;
         let sy = this.y + (p2.y - this.y) * s;
         return new Point(sx, sy);
@@ -37,4 +37,5 @@ let p3 = new Point(0,0)
 let p4 = new Point(4,8)
 p3.scaleTo(p4,0.25).print(1,2)// expect (1, 2)
 p4.scaleTo(p3, 0.75).print() // expect (1, 2)
+
 
