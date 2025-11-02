@@ -41,7 +41,7 @@ function Point(x, y) {
 
 let p2 = new Point(3, 4);
 p2.print();
-p2 = //make with constructor function
+p2 = new Point(10, 15); 
 p2.print();
-p2 = //make with constructor function
+p2 = new Point(-2, 8); 
 p2.print();
